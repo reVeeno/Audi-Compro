@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audi</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="icon" href="/image/Audi-icon.png">
+    <style>
+        body {
+            padding-top: 56px;
+        }
+        .navbar-brand img {
+            width: 70px;
+            height: auto;
+        }
+        .jumbotron {
+            position: relative;
+            background: url('https://uploads.audi-mediacenter.com/system/production/media/99851/images/102c4a44771a430284aa2646a8f3867211e07af1/A211626_web_2880.jpg?1698463340') no-repeat center center;
+            background-size: cover;
+            color: white;
+            height: 60vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .jumbotron::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+        }
+        .jumbotron .container {
+            position: relative;
+            z-index: 2;
+            background: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .jumbotron button, .about button {
+            border-radius: 0px;
+        }
+        .innovation, .contact {
+            padding: 60px 0;
+        }
+        .innovation img {
+            width: 100%;
+            height: auto;
+            transition: transform 0.3s ease;
+        }
+        .card:hover img {
+            transform: scale(1.1);
+        }
+        .card {
+            cursor: pointer;
+        }
+        .contact {
+            background-color: black;
+            color: white;
+        }
+        a {
+            color: white;
+            text-decoration: none;
+        }
+        a:hover {
+            color: grey;
+        }
+        .innovation img {
+            width: 300px;
+            height: auto;
+        }
+        footer {
+            background-color: black;
+            padding: 20px 0;
+            text-align: center;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <a class="navbar-brand" href="#">
+            <img src="/image/Audi-logo.png" alt="Company Logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#innovation">Innovation</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#discover">Discover</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="jumbotron text-center">
+        <div class="container">
+            <h1 class="display-4">Audi</h1>
+            <p class="lead">We provide the best top-notch cars.</p>
+            <button type="button" class="btn btn-outline-light btn-lg">Read more</button>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="about container my-5">
+        <div class="row">
+            <div class="col-lg-6">
+                <h2>About Us</h2>
+                <p>Audi specializes in delivering high-quality products and services that meet the needs of our diverse client base. With years of experience in the industry, we are committed to excellence and innovation.</p>
+                <button type="button" class="btn btn-outline-dark btn-lg">Read more</button>
+            </div>
+            <div class="col-lg-6">
+                <img src="https://cdn.motor1.com/images/mgl/rKKbOE/s1/2022-audi-rs6-avant.jpg" class="img-fluid" alt="About Us">
+            </div>
+        </div>
+    </section>
+
+    <!-- Innovation Section -->
+    <section id="innovation" class="innovation bg-light text-center">
+        <div class="container">
+            <h2>Current Topics from the World of Audi</h2>
+            <div class="row" style="margin-top: 50px;">
+                <div class="col-md-4">
+                    <div class="card mb-4 shadow-sm">
+                        <div class="card-body">
+                            <img src="/brand image/Quattro.png" alt="">
+                            <h5 class="card-title" style="margin-top: 20px;">Bringing Back the Rally</h5>
+                            <p class="card-text">Miss the Audi Quattro rally at the Group B championship? We're stepping right back into the game, bringing you the best rallying experience with Team Audi®.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4 shadow-sm">
+                        <div class="card-body">
+                            <img src="/brand image/R8.png" alt="">
+                            <h5 class="card-title" style="margin-top: 20px;">Ban on Electric Vehicles</h5>
+                            <p class="card-text">Audi will provide the next 1000 years of automotive innovation with ICE (Internal Combustion Engine) and ban all EVs (Electric Vehicles) from its production.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4 shadow-sm">
+                        <div class="card-body">
+                            <img src="brand image/F1.png" alt="">
+                            <h5 class="card-title" style="margin-top: 20px;">The Game is On</h5>
+                            <p class="card-text">Why stop at rally if we can expand to Formula 1? In 2026, the Audi Formula One® team will be the next nightmare for all Formula 1 teams.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Discover Section -->
+    <section id="discover" class="discover container my-5">
+        <div class="row">
+            <div class="col-lg-6">
+                <img src="https://imgcdn.oto.com/large/gallery/exterior/1/9/audi-q7-front-angle-low-view-745440.jpg" class="img-fluid" alt="Discover" style="">
+            </div>
+            <div class="col-lg-6">
+                <h2>At Audi you’ll find the right vehicle for every requirement</h2>
+                <p>Sporty, luxurious, or compact – at Audi you will find the right vehicle for every requirement. Discover and configure our series models now.</p>
+                <button type="button" class="btn btn-outline-dark btn-lg" style="border-radius: 0px;">Discover all models</button>
+                <p style="margin-top: 20px; font-size: 13px; color: #4b4b4b;">Audi Q4 e-tron: Power consumption (combined) in kWh/100 km: 19.5–16.2CO₂ emissions (combined) in g/km: 0CO₂ emission class: A</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h4>Contact</h4>
+                    <ul style="display: flex; flex-direction: column;">
+                        AUDI AG Auto-Union-Str, Ingolstadt, Germany
+                        <a href="mailto:Audi@company.com">Audi@company.com</a>
+                        <a href="tel:+226892234890">+22 689 223 4890</a>
+                    </ul>
+                </div>
+                <div class="col-lg-6" >
+                    <h4>AUDI AG</h4>
+                    <ul style="display: flex; flex-direction: column;">
+                        <a href="#about">About Us</a>
+                        <a href="#innovation">Innovations</a>
+                        <a href="#discover">Discover</a>
+                        <a href="#contact">Contact Us</a>
+                    </ul>
+                </div>
+                <div>
+                    <img src="" alt="">
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- Footer Divider -->
+    <div class="border-1 border-top border-secondary"></div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 AUDI AG. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
